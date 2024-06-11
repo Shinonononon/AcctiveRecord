@@ -12,6 +12,7 @@ class ApplicationController < ActionController::Base
   def exercise2
     # 【要件】
     #  1. 注文されていない料理を提供しているすべてのお店が@shopsに代入されていること
+    @shops = Shop.left_outer_joins()
 
   end
 
