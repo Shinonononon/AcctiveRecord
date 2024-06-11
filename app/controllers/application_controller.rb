@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
     #  1. 注文されていないすべての料理を@foodsに代入すること
     #  2. left_outer_joinsを使うこと
     #  3. 以下のコードに続ける形で記述すること
-    @foods = Food.left_outer_joins(:orders).where(orders: { id: nil }).distinct
+    @foods = Food.left_outer_joins(:order_foods).where(order_foods: { id: nil })
   end
 
   def exercise2
