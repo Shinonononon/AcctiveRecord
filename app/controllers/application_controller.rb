@@ -22,7 +22,7 @@ class ApplicationController < ActionController::Base
 
   end
 
-  def exercise1
+  def exercise4
     # 【要件】
     #  1. 一番お金を使っている顧客が@customerに代入されていること
     #  2. @customerにfoods_price_sumと呼びかけると合計金額を返すこと
